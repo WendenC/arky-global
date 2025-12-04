@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Open Sauce Two', sans-serif;
+  background-color: #1b1b1b;
+  color: #f4f4f4;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+/* Animação carrossel infinito - Esquerda para direita */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Animação carrossel infinito - Direita para esquerda */
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-scroll-left {
+  animation: scroll-left 30s linear infinite;
+}
+
+.animate-scroll-right {
+  animation: scroll-right 30s linear infinite;
+}
+
+/* Animação fade-in up */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-fade-in-up-delay-1 {
+  animation: fadeInUp 0.8s ease-out 0.5s forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-up-delay-2 {
+  animation: fadeInUp 0.8s ease-out 1s forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-up-delay-3 {
+  animation: fadeInUp 0.8s ease-out 1.5s forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-up-delay-4 {
+  animation: fadeInUp 0.8s ease-out 2s forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-up-delay-5 {
+  animation: fadeInUp 0.8s ease-out 2.5s forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-up-delay-6 {
+  animation: fadeInUp 0.8s ease-out 3s forwards;
+  opacity: 0;
+}
+
+/* Animação slide-in da esquerda */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animação slide-in da direita */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.animate-slide-in-left-delay-1 {
+  animation: slideInLeft 0.8s ease-out 0.5s forwards;
+  opacity: 0;
+}
+
+.animate-slide-in-left-delay-2 {
+  animation: slideInLeft 0.8s ease-out 1s forwards;
+  opacity: 0;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.animate-slide-in-right-delay-1 {
+  animation: slideInRight 0.8s ease-out 0.5s forwards;
+  opacity: 0;
+}
+
+.animate-slide-in-left-delay-2 {
+  animation: slideInLeft 0.8s ease-out 1s forwards;
+  opacity: 0;
+}
+
+/* Botão com gradiente invertido no hover */
+.btn-gradient {
+  background: linear-gradient(100deg, #27C4AA 20.45%, #0B8974 91.36%);
+  transition: background 0.3s ease;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(100deg, #0B8974 20.45%, #27C4AA 91.36%);
+}
+
+
